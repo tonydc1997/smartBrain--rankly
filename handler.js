@@ -1,5 +1,10 @@
 'use strict';
 
+const emojis = [
+  '😐','🤨', '🤔', '😧', '🤭',
+  '🤯', '😏', '😎', '🥳', '🤩',
+];
+
 module.exports.rank = async (event, context) => {
   return {
     statusCode: 200,
