@@ -16,6 +16,9 @@ module.exports.rank = async (event, context) => {
 
   return {
     statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:3001',
+    },
     body: JSON.stringify({
       message: 'Go Serverless v1.0! Your function executed successfully!',
       input: rankEmoji,
