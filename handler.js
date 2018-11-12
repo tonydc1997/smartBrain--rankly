@@ -9,7 +9,7 @@ const emojis = [
 module.exports.rank = async (event, context) => {
   const rank = event.queryStringParameters.rank;
   const rankEmoji = emojis[
-    rank > emojis.length
+    rank >= emojis.length
       ? emojis.length -1
       : rank
   ];
